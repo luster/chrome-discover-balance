@@ -1,0 +1,19 @@
+{
+  "name": "DiscoverCard Real Balance",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Current Balance + Pending Transactions",
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.discovercard.com/cardmembersvcs/achome/homepage"
+      ],
+      "js": [
+	"js/jquery/jquery.js",
+        "src/inject/inject.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
